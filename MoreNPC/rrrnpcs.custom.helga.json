@@ -3,9 +3,9 @@
    "sNewPrefabName" : "helga",
    "Category_Appearance" : {
       "vScale" : {
-         "fX" : 1,
-         "fY" : 1,
-         "fZ" : 0.8
+         "fX" : 0.8,
+         "fY" : 0.8,
+         "fZ" : 1
       },
       "cTintColor" : null,
       "cBodySmoke" : null,
@@ -45,7 +45,6 @@
       ],
       "aRandomWeapon" : [
          "Bow",
-         "BowFineWood",
          "SpearFlint",
          "SpearBronze",
          "SwordBronze",
@@ -100,10 +99,12 @@
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
       "aConsumeItems" : [
-         "CarrotSoup",
-         "DeerMeat",
-         "QueensJam",
+         "Coins",
+         "CookedDeerMeat",
+         "CookedDeerMeat",
+         "CookedLoxMeat",
          "CookedMeat",
+         "CookedWolfMeat",
          "NeckTailGrilled"
       ],
       "fConsumeRange" : 2,
@@ -113,7 +114,52 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : []
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 20, 
+            "iAmountMax" : 40, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorLeatherChest",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorLeatherLegs",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.6, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "KnifeCopper",
+            "fChance" : 0.8, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "MaceIron",
+            "fChance" : 0.2, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordIron",
+            "fChance" : 0.25, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         }
+      ]
    },
    "Category_Special" : {
       "bCanTame" : true,

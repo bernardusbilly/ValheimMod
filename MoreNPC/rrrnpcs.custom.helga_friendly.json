@@ -1,6 +1,6 @@
 {
    "sOriginalPrefabName" : "RRR_NPC",
-   "sNewPrefabName" : "helga_hostile",
+   "sNewPrefabName" : "helga",
    "Category_Appearance" : {
       "vScale" : {
          "fX" : 0.8,
@@ -13,11 +13,11 @@
    },
    "Category_Character" : {
       "sName" : "Helga",
-      "sFaction" : "SeaMonsters",
+      "sFaction" : "Players",
       "bBoss" : false,
       "sBossEvent" : "",
       "sDefeatSetGlobalKey" : "",
-      "fMoveSpeedMulti" : 0.8,
+      "fMoveSpeedMulti" : 0.9,
       "bToleratesWater" : true,
       "bToleratesFire" : false,
       "bToleratesSmoke" : false,
@@ -44,7 +44,7 @@
          "ArmorLeatherChest"
       ],
       "aRandomWeapon" : [
-         "@1",
+         "Bow",
          "SpearFlint",
          "SpearBronze",
          "SwordBronze",
@@ -77,7 +77,7 @@
       "fRandomMoveRange" : 3,
       "bAvoidFire" : true,
       "bAfraidOfFire" : true,
-      "bAvoidWater" : true,
+      "bAvoidWater" : false,
       "sSpawnMessage" : "",
       "sDeathMessage" : ""
    },
@@ -88,9 +88,9 @@
       "fFleeIfLowHealth" : 0.2,
       "bCirculateWhileCharging" : true,
       "bCirculateWhileChargingFlying" : false,
-      "bEnableHuntPlayer" : true,
-      "bAttackPlayerObjects" : true,
-      "bAttackPlayerObjectsWhenAlerted" : true,
+      "bEnableHuntPlayer" : false,
+      "bAttackPlayerObjects" : false,
+      "bAttackPlayerObjectsWhenAlerted" : false,
       "fInterceptTimeMax" : 2,
       "fInterceptTimeMin" : 0,
       "fMaxChaseDistance" : 30,
@@ -98,7 +98,14 @@
       "fCircleTargetInterval" : 10,
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
-      "aConsumeItems" : [],
+      "aConsumeItems" : [
+         "CookedDeerMeat",
+         "CookedDeerMeat",
+         "CookedLoxMeat",
+         "CookedMeat",
+         "CookedWolfMeat",
+         "NeckTailGrilled"
+      ],
       "fConsumeRange" : 2,
       "fConsumeSearchRange" : 5,
       "fConsumeSearchInterval" : 10,
@@ -154,9 +161,9 @@
       ]
    },
    "Category_Special" : {
-      "bCanTame" : false,
+      "bCanTame" : true,
       "bAlwaysTame" : false,
-      "bCommandableWhenTame" : false,
+      "bCommandableWhenTame" : true,
       "bCanProcreateWhenTame" : false,
       "bSfxNoAlert" : false,
       "bSfxNoIdle" : true,
