@@ -1,6 +1,6 @@
 {
    "sOriginalPrefabName" : "RRR_NPC",
-   "sNewPrefabName" : "bandit_hostile",
+   "sNewPrefabName" : "hostile_bandit",
    "Category_Appearance" : {
       "vScale" : {
          "fX" : 1,
