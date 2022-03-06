@@ -17,11 +17,11 @@
       "bBoss" : false,
       "sBossEvent" : "",
       "sDefeatSetGlobalKey" : "",
-      "fMoveSpeedMulti" : 1,
+      "fMoveSpeedMulti" : 0.9,
       "bToleratesWater" : true,
       "bToleratesFire" : false,
       "bToleratesSmoke" : false,
-      "fHealth" : 90,
+      "fHealth" : 80,
       "dDamageTaken" : {
          "m_blunt" : "Normal",
          "m_slash" : "Normal",
@@ -50,23 +50,24 @@
          "@1"
       ],
       "aRandomArmor" : [
+         "ArmorLeatherChest",
+         "ArmorLeatherLegs",
          "CapeDeerHide",
          "CapeTrollHide",
-         "ArmorLeatherLegs",
-         "ArmorLeatherChest",
+         "SageRobeBlue",
+         "SageRobeBrown",
+         "SageRobeGray",
          "SageTunicBlack",
          "SageTunicBlue",
          "SageTunicBrown",
          "SageTunicGray",
          "SageTunicGreen",
          "SageTunicRed",
-         "SageTunicWhite",
-         "SageRobeBlue",
-         "SageRobeBrown",
-         "SageRobeGray"
+         "SageTunicWhite"
       ],
       "aRandomShield" : [
          "ShieldWood",
+         "",
          "",
          ""
       ],
@@ -112,7 +113,7 @@
       "fRandomMoveRange" : 3,
       "bAvoidFire" : true,
       "bAfraidOfFire" : true,
-      "bAvoidWater" : false
+      "bAvoidWater" : true
    },
    "Category_MonsterAI" : {
       "fAlertRange" : 20,
@@ -131,10 +132,7 @@
       "fCircleTargetInterval" : 10,
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
-      "aConsumeItems" : [
-         "CookedMeat",
-         "NeckTailGrilled"
-      ],
+      "aConsumeItems" : [],
       "fConsumeRange" : 2,
       "fConsumeSearchRange" : 5,
       "fConsumeSearchInterval" : 10,
@@ -142,7 +140,16 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : [{"sPrefabName" : "Coins", "iAmountMin" : 20, "iAmountMax" : 30, "fChance" : 1, "bOnePerPlayer" : false, "bLevelMultiplier" : true}]
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 20, 
+            "iAmountMax" : 50, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         }
+      ]
    },
    "Category_Special" : {
       "bCanTame" : false,
@@ -157,8 +164,9 @@
    },
    "Category_NpcOnly" : {
       "bIsFemale" : false,
-      "bRandomGender" : false,
-      "aBeardIds" : [""],
+      "bRandomGender" : true,
+      "bNoBeardIfFemale": true,
+      "aBeardIds" : [],
       "aHairIds" : [
          "Hair1",
          "Hair2",
