@@ -3,9 +3,9 @@
    "sNewPrefabName" : "harald_hostile",
    "Category_Appearance" : {
       "vScale" : {
-         "fX" : 1,
-         "fY" : 1,
-         "fZ" : 0.8
+         "fX" : 0.9,
+         "fY" : 0.9,
+         "fZ" : 1.1
       },
       "cTintColor" : null,
       "cBodySmoke" : null,
@@ -104,7 +104,7 @@
       "fRandomMoveRange" : 3,
       "bAvoidFire" : true,
       "bAfraidOfFire" : true,
-      "bAvoidWater" : false,
+      "bAvoidWater" : true,
       "sSpawnMessage" : "",
       "sDeathMessage" : ""
    },
@@ -125,12 +125,7 @@
       "fCircleTargetInterval" : 10,
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
-      "aConsumeItems" : [
-         "CarrotSoup",
-         "QueensJam",
-         "CookedMeat",
-         "NeckTailGrilled"
-      ],
+      "aConsumeItems" : [],
       "fConsumeRange" : 2,
       "fConsumeSearchRange" : 5,
       "fConsumeSearchInterval" : 10,
@@ -138,7 +133,46 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : []
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 35, 
+            "iAmountMax" : 60, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorBronzeChest",
+            "fChance" : 0.2, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorBronzeLegs",
+            "fChance" : 0.2, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearBronze",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.5, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordSilver",
+            "fChance" : 0.1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         }
+      ]
    },
    "Category_Special" : {
       "bCanTame" : false,
@@ -154,7 +188,7 @@
    "Category_NpcOnly" : {
       "bIsFemale" : false,
       "bRandomGender" : false,
-      "aBeardIds" : [""],
+      "aBeardIds" : [],
       "aHairIds" : [
          "Hair1",
          "Hair2",
