@@ -98,9 +98,11 @@
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
       "aConsumeItems" : [
-         "CarrotSoup",
-         "QueensJam",
+         "CookedDeerMeat",
+         "CookedDeerMeat",
+         "CookedLoxMeat",
          "CookedMeat",
+         "CookedWolfMeat",
          "NeckTailGrilled"
       ],
       "fConsumeRange" : 2,
@@ -110,11 +112,50 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : []
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 35, 
+            "iAmountMax" : 60, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorBronzeChest",
+            "fChance" : 0.2, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorBronzeLegs",
+            "fChance" : 0.2, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearBronze",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.5, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordSilver",
+            "fChance" : 0.1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         }
+      ]
    },
    "Category_Special" : {
       "bCanTame" : true,
-      "bAlwaysTame" : false,
+      "bAlwaysTame" : true,
       "bCommandableWhenTame" : true,
       "bCanProcreateWhenTame" : false,
       "bSfxNoAlert" : false,

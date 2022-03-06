@@ -1,6 +1,6 @@
 {
    "sOriginalPrefabName" : "RRR_NPC",
-   "sNewPrefabName" : "liv_hostile",
+   "sNewPrefabName" : "liv",
    "Category_Appearance" : {
       "vScale" : {
          "fX" : 1,
@@ -13,7 +13,7 @@
    },
    "Category_Character" : {
       "sName" : "Liv",
-      "sFaction" : "SeaMonsters",
+      "sFaction" : "Players",
       "bBoss" : false,
       "sBossEvent" : "",
       "sDefeatSetGlobalKey" : "",
@@ -44,7 +44,7 @@
          "ArmorBronzeLegs"
       ],
       "aRandomWeapon" : [
-         "@1",
+         "BowHuntsman",
          "SpearWolfFang",
          "SwordBronze",
          "SwordSilver",
@@ -64,35 +64,7 @@
          "",
          ""
       ],
-      "aaRandomSets" : [],
-      "aAdvancedCustomAttacks":[
-         {
-            "sOriginalPrefabName":"BowHuntsman",
-            "sTargetAnim":"bow_fire",
-            "fAIAttackInterval":6,
-            "bAIPrioritized":null,
-            "dtAttackDamageOverride":{
-               "fDamage":0,
-               "fBlunt":0,
-               "fSlash":0,
-               "fPierce":40,
-               "fChop":0,
-               "fPickaxe":0,
-               "fFire":0,
-               "fFrost":0,
-               "fLightning":0,
-               "fPoison":0,
-               "fSpirit":0
-            },
-            "fAttackDamageTotalOverride":null,
-            "sAttackProjectileOverride":"bow_projectile",
-            "aStartEffects":[
-               "vfx_crow_death"
-            ],
-            "aHitEffects":null,
-            "aTriggerEffects":null
-         }
-      ]
+      "aaRandomSets" : []
    },
    "Category_BaseAI" : {
       "fViewRange" : 30,
@@ -104,7 +76,7 @@
       "fRandomMoveRange" : 3,
       "bAvoidFire" : true,
       "bAfraidOfFire" : true,
-      "bAvoidWater" : true,
+      "bAvoidWater" : false,
       "sSpawnMessage" : "",
       "sDeathMessage" : ""
    },
@@ -115,9 +87,9 @@
       "fFleeIfLowHealth" : 0.2,
       "bCirculateWhileCharging" : true,
       "bCirculateWhileChargingFlying" : false,
-      "bEnableHuntPlayer" : true,
-      "bAttackPlayerObjects" : true,
-      "bAttackPlayerObjectsWhenAlerted" : true,
+      "bEnableHuntPlayer" : false,
+      "bAttackPlayerObjects" : false,
+      "bAttackPlayerObjectsWhenAlerted" : false,
       "fInterceptTimeMax" : 2,
       "fInterceptTimeMin" : 0,
       "fMaxChaseDistance" : 30,
@@ -125,7 +97,15 @@
       "fCircleTargetInterval" : 10,
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
-      "aConsumeItems" : [],
+      "aConsumeItems" : [
+         "Coins",
+         "CookedDeerMeat",
+         "CookedDeerMeat",
+         "CookedLoxMeat",
+         "CookedMeat",
+         "CookedWolfMeat",
+         "NeckTailGrilled"
+      ],
       "fConsumeRange" : 2,
       "fConsumeSearchRange" : 5,
       "fConsumeSearchInterval" : 10,
@@ -175,9 +155,9 @@
       ]
    },
    "Category_Special" : {
-      "bCanTame" : false,
+      "bCanTame" : true,
       "bAlwaysTame" : false,
-      "bCommandableWhenTame" : false,
+      "bCommandableWhenTame" : true,
       "bCanProcreateWhenTame" : false,
       "bSfxNoAlert" : false,
       "bSfxNoIdle" : true,
