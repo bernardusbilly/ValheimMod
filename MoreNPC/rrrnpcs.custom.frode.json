@@ -3,9 +3,9 @@
    "sNewPrefabName" : "frode",
    "Category_Appearance" : {
       "vScale" : {
-         "fX" : 1,
-         "fY" : 1,
-         "fZ" : 1
+         "fX" : 1.05,
+         "fY" : 1.05,
+         "fZ" : 1.05
       },
       "cTintColor" : null,
       "cBodySmoke" : null,
@@ -17,11 +17,11 @@
       "bBoss" : false,
       "sBossEvent" : "",
       "sDefeatSetGlobalKey" : "",
-      "fMoveSpeedMulti" : 1,
+      "fMoveSpeedMulti" : 0.6,
       "bToleratesWater" : true,
       "bToleratesFire" : false,
       "bToleratesSmoke" : false,
-      "fHealth" : 90,
+      "fHealth" : 60,
       "dDamageTaken" : {
          "m_blunt" : "Normal",
          "m_slash" : "Normal",
@@ -44,28 +44,26 @@
          "ArmorRagsLegs"
       ],
       "aRandomWeapon" : [
-         "Bow",
-         "BowFineWood",
          "SpearFlint",
          "SpearBronze",
          "SwordBronze",
          "KnifeCopper"
       ],
       "aRandomArmor" : [
+         "ArmorLeatherChest",
+         "ArmorLeatherLegs",
          "CapeDeerHide",
          "CapeTrollHide",
-         "ArmorLeatherLegs",
-         "ArmorLeatherChest",
+         "SageRobeBlue",
+         "SageRobeBrown",
+         "SageRobeGray",
          "SageTunicBlack",
          "SageTunicBlue",
          "SageTunicBrown",
          "SageTunicGray",
          "SageTunicGreen",
          "SageTunicRed",
-         "SageTunicWhite",
-         "SageRobeBlue",
-         "SageRobeBrown",
-         "SageRobeGray"
+         "SageTunicWhite"
       ],
       "aRandomShield" : [
          "ShieldWood",
@@ -108,10 +106,11 @@
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
       "aConsumeItems" : [
-         "CarrotSoup",
-         "DeerMeat",
-         "QueensJam",
+         "CookedDeerMeat",
+         "CookedDeerMeat",
+         "CookedLoxMeat",
          "CookedMeat",
+         "CookedWolfMeat",
          "NeckTailGrilled"
       ],
       "fConsumeRange" : 2,
@@ -121,7 +120,46 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : []
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 10, 
+            "iAmountMax" : 25, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorRagsChest",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorRagsLegs",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearBronze",
+            "fChance" : 0.4, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearFlint",
+            "fChance" : 0.8, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         }
+      ]
    },
    "Category_Special" : {
       "bCanTame" : true,
@@ -136,8 +174,9 @@
    },
    "Category_NpcOnly" : {
       "bIsFemale" : false,
+      "bNoBeardIfFemale": true,
       "bRandomGender" : false,
-      "aBeardIds" : [""],
+      "aBeardIds" : [],
       "aHairIds" : [
          "Hair1",
          "Hair2",

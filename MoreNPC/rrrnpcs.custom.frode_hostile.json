@@ -113,7 +113,7 @@
       "fRandomMoveRange" : 3,
       "bAvoidFire" : true,
       "bAfraidOfFire" : true,
-      "bAvoidWater" : false,
+      "bAvoidWater" : true,
       "sSpawnMessage" : "",
       "sDeathMessage" : ""
    },
@@ -134,10 +134,7 @@
       "fCircleTargetInterval" : 10,
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
-      "aConsumeItems" : [
-         "CookedMeat",
-         "NeckTailGrilled"
-      ],
+      "aConsumeItems" : [],
       "fConsumeRange" : 2,
       "fConsumeSearchRange" : 5,
       "fConsumeSearchInterval" : 10,
@@ -145,7 +142,46 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : []
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 10, 
+            "iAmountMax" : 25, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorRagsChest",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorRagsLegs",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearBronze",
+            "fChance" : 0.4, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearFlint",
+            "fChance" : 0.8, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         }
+      ]
    },
    "Category_Special" : {
       "bCanTame" : false,
