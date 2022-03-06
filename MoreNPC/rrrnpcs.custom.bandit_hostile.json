@@ -40,7 +40,7 @@
       "fAttackDamageTotalOverride" : null,
       "sAttackProjectileOverride" : null,
       "aDefaultItems" : [
-         "ArmorRagsLegs",
+         "ArmorRagsChest",
          "ArmorRagsLegs"
       ],
       "aRandomWeapon" : [
@@ -143,11 +143,35 @@
       "drDrops" : [
          {
             "sPrefabName" : "Coins",
-            "iAmountMin" : 20, 
+            "iAmountMin" : 5, 
             "iAmountMax" : 50, 
             "fChance" : 1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorRagsChest",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorRagsLegs",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.7, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "KnifeCopper",
+            "fChance" : 0.7, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
          }
       ]
    },
