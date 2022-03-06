@@ -163,7 +163,7 @@
    },
    "Category_Special" : {
       "bCanTame" : true,
-      "bAlwaysTame" : false,
+      "bAlwaysTame" : true,
       "bCommandableWhenTame" : true,
       "bCanProcreateWhenTame" : false,
       "bSfxNoAlert" : false,
