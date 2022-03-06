@@ -1,6 +1,6 @@
 {
    "sOriginalPrefabName" : "RRR_NPC",
-   "sNewPrefabName" : "frida_hostile",
+   "sNewPrefabName" : "frida_friendly",
    "Category_Appearance" : {
       "vScale" : {
          "fX" : 0.9,
@@ -13,7 +13,7 @@
    },
    "Category_Character" : {
       "sName" : "Frida",
-      "sFaction" : "SeaMonsters",
+      "sFaction" : "Players",
       "bBoss" : false,
       "sBossEvent" : "",
       "sDefeatSetGlobalKey" : "",
@@ -44,27 +44,26 @@
          "ArmorRagsLegs"
       ],
       "aRandomWeapon" : [
-         "@1",
          "SpearFlint",
          "SpearBronze",
          "SwordBronze",
          "KnifeCopper"
       ],
       "aRandomArmor" : [
+         "ArmorLeatherChest",
+         "ArmorLeatherLegs",
          "CapeDeerHide",
          "CapeTrollHide",
-         "ArmorLeatherLegs",
-         "ArmorLeatherChest",
+         "SageRobeBlue",
+         "SageRobeBrown",
+         "SageRobeGray",
          "SageTunicBlack",
          "SageTunicBlue",
          "SageTunicBrown",
          "SageTunicGray",
          "SageTunicGreen",
          "SageTunicRed",
-         "SageTunicWhite",
-         "SageRobeBlue",
-         "SageRobeBrown",
-         "SageRobeGray"
+         "SageTunicWhite"
       ],
       "aRandomShield" : [
          "ShieldWood",
@@ -73,34 +72,6 @@
       ],
       "aaRandomSets" : [
          
-      ],
-      "aAdvancedCustomAttacks":[
-         {
-            "sOriginalPrefabName":"Bow",
-            "sTargetAnim":"bow_fire",
-            "fAIAttackInterval":6,
-            "bAIPrioritized":null,
-            "dtAttackDamageOverride":{
-               "fDamage":0,
-               "fBlunt":0,
-               "fSlash":0,
-               "fPierce":20,
-               "fChop":0,
-               "fPickaxe":0,
-               "fFire":0,
-               "fFrost":0,
-               "fLightning":0,
-               "fPoison":0,
-               "fSpirit":0
-            },
-            "fAttackDamageTotalOverride":null,
-            "sAttackProjectileOverride":"bow_projectile",
-            "aStartEffects":[
-               "vfx_crow_death"
-            ],
-            "aHitEffects":null,
-            "aTriggerEffects":null
-         }
       ]
    },
    "Category_BaseAI" : {
@@ -113,7 +84,7 @@
       "fRandomMoveRange" : 3,
       "bAvoidFire" : true,
       "bAfraidOfFire" : true,
-      "bAvoidWater" : true,
+      "bAvoidWater" : false,
       "sSpawnMessage" : "",
       "sDeathMessage" : ""
    },
@@ -124,9 +95,9 @@
       "fFleeIfLowHealth" : 0.2,
       "bCirculateWhileCharging" : true,
       "bCirculateWhileChargingFlying" : false,
-      "bEnableHuntPlayer" : true,
-      "bAttackPlayerObjects" : true,
-      "bAttackPlayerObjectsWhenAlerted" : true,
+      "bEnableHuntPlayer" : false,
+      "bAttackPlayerObjects" : false,
+      "bAttackPlayerObjectsWhenAlerted" : false,
       "fInterceptTimeMax" : 2,
       "fInterceptTimeMin" : 0,
       "fMaxChaseDistance" : 30,
@@ -134,7 +105,15 @@
       "fCircleTargetInterval" : 10,
       "fCircleTargetDuration" : 3,
       "fCircleTargetDistance" : 5,
-      "aConsumeItems" : [],
+      "aConsumeItems" : [
+         "Coins",
+         "CookedDeerMeat",
+         "CookedDeerMeat",
+         "CookedLoxMeat",
+         "CookedMeat",
+         "CookedWolfMeat",
+         "NeckTailGrilled"
+      ],
       "fConsumeRange" : 2,
       "fConsumeSearchRange" : 5,
       "fConsumeSearchInterval" : 10,
@@ -142,12 +121,51 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : []
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 10, 
+            "iAmountMax" : 25, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorRagsChest",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorRagsLegs",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearBronze",
+            "fChance" : 0.6, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SpearFlint",
+            "fChance" : 0.8, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.2, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         }
+      ]
    },
    "Category_Special" : {
-      "bCanTame" : false,
+      "bCanTame" : true,
       "bAlwaysTame" : false,
-      "bCommandableWhenTame" : false,
+      "bCommandableWhenTame" : true,
       "bCanProcreateWhenTame" : false,
       "bSfxNoAlert" : false,
       "bSfxNoIdle" : true,
