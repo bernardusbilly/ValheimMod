@@ -1,6 +1,6 @@
 {
    "sOriginalPrefabName" : "RRR_NPC",
-   "sNewPrefabName" : "helga",
+   "sNewPrefabName" : "helga_friendly",
    "Category_Appearance" : {
       "vScale" : {
          "fX" : 0.8,

@@ -1,6 +1,6 @@
 {
    "sOriginalPrefabName" : "RRR_NPC",
-   "sNewPrefabName" : "hostile_looter4",
+   "sNewPrefabName" : "hostile_looter",
    "Category_Appearance" : {
       "vScale" : {
          "fX" : 1,
@@ -98,7 +98,40 @@
    },
    "Category_CharacterDrop" : {
       "bReplaceOriginalDrops" : true,
-      "drDrops" : [{"sPrefabName" : "Coins", "iAmountMin" : 20, "iAmountMax" : 30, "fChance" : 1, "bOnePerPlayer" : false, "bLevelMultiplier" : true}]
+      "drDrops" : [
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 5, 
+            "iAmountMax" : 50, 
+            "fChance" : 1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "ArmorRagsChest",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "ArmorRagsLegs",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "SwordBronze",
+            "fChance" : 0.7, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "KnifeCopper",
+            "fChance" : 0.7, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         }
+      ]
    },
    "Category_Special" : {
       "bCanTame" : false,

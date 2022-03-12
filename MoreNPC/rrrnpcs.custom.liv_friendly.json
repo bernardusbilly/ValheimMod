@@ -1,6 +1,6 @@
 {
    "sOriginalPrefabName" : "RRR_NPC",
-   "sNewPrefabName" : "liv",
+   "sNewPrefabName" : "liv_friendly",
    "Category_Appearance" : {
       "vScale" : {
          "fX" : 1,
