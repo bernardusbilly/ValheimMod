@@ -114,7 +114,6 @@
       "fCircleTargetDistance" : 5,
       "aConsumeItems" : [
          "CookedDeerMeat",
-         "CookedDeerMeat",
          "CookedLoxMeat",
          "CookedMeat",
          "CookedWolfMeat",

@@ -98,7 +98,6 @@
       "fCircleTargetDistance" : 5,
       "aConsumeItems" : [
          "CookedDeerMeat",
-         "CookedDeerMeat",
          "CookedLoxMeat",
          "CookedMeat",
          "CookedWolfMeat",
@@ -146,7 +145,7 @@
          },
          {
             "sPrefabName" : "SwordSilver",
-            "fChance" : 0.02, 
+            "fChance" : 0.01, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          }
