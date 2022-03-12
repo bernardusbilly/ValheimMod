@@ -40,11 +40,16 @@
       "fAttackDamageTotalOverride" : null,
       "sAttackProjectileOverride" : null,
       "aDefaultItems" : [
-         "ArmorRagsLegs",
+         "ArmorRagsChest",
          "ArmorRagsLegs"
       ],
       "aRandomWeapon" : [
          "SpearFlint",
+         "SpearFlint",
+         "KnifeFlint",
+         "KnifeFlint",
+         "KnifeFlint",
+         "KnifeFlint",
          "SpearBronze",
          "SwordBronze",
          "KnifeCopper"
@@ -68,11 +73,11 @@
       "aRandomShield" : [
          "ShieldWood",
          "",
+         "",
+         "",
          ""
       ],
-      "aaRandomSets" : [
-         
-      ]
+      "aaRandomSets" : []
    },
    "Category_BaseAI" : {
       "fViewRange" : 30,
