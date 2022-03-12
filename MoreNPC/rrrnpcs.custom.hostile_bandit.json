@@ -45,9 +45,9 @@
       ],
       "aRandomWeapon" : [
          "SpearFlint",
+         "KnifeFlint",
          "SwordBronze",
-         "KnifeCopper",
-         "@1"
+         "KnifeCopper"
       ],
       "aRandomArmor" : [
          "ArmorLeatherChest",
@@ -71,37 +71,7 @@
          "",
          ""
       ],
-      "aaRandomSets" : [
-         
-      ],
-      "aAdvancedCustomAttacks":[
-         {
-            "sOriginalPrefabName":"Bow",
-            "sTargetAnim":"bow_fire",
-            "fAIAttackInterval":6,
-            "bAIPrioritized":null,
-            "dtAttackDamageOverride":{
-               "fDamage":0,
-               "fBlunt":0,
-               "fSlash":0,
-               "fPierce":20,
-               "fChop":0,
-               "fPickaxe":0,
-               "fFire":0,
-               "fFrost":0,
-               "fLightning":0,
-               "fPoison":0,
-               "fSpirit":0
-            },
-            "fAttackDamageTotalOverride":null,
-            "sAttackProjectileOverride":"bow_projectile",
-            "aStartEffects":[
-               "vfx_crow_death"
-            ],
-            "aHitEffects":null,
-            "aTriggerEffects":null
-         }
-      ]
+      "aaRandomSets" : []
    },
    "Category_BaseAI" : {
       "fViewRange" : 30,
@@ -144,32 +114,32 @@
          {
             "sPrefabName" : "Coins",
             "iAmountMin" : 5, 
-            "iAmountMax" : 50, 
+            "iAmountMax" : 30, 
             "fChance" : 1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : true
          },
          {
             "sPrefabName" : "ArmorRagsChest",
-            "fChance" : 0.3, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "ArmorRagsLegs",
-            "fChance" : 0.3, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "SwordBronze",
-            "fChance" : 0.7, 
+            "fChance" : 0.01, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "KnifeCopper",
-            "fChance" : 0.7, 
+            "fChance" : 0.02, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          }

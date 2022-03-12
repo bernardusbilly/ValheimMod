@@ -40,20 +40,20 @@
       "fAttackDamageTotalOverride" : null,
       "sAttackProjectileOverride" : null,
       "aDefaultItems" : [
-         "ArmorRagsLegs",
+         "ArmorRagsChest",
          "ArmorRagsLegs"
       ],
       "aRandomWeapon" : [
          "KnifeCopper",
+         "KnifeFlint",
+         "KnifeFlint",
          "KnifeFlint"
       ],
       "aRandomArmor" : [
+         "ArmorLeatherChest",
+         "ArmorLeatherLegs"
       ],
-      "aRandomShield" : [
-         "ShieldWood",
-         "",
-         ""
-      ],
+      "aRandomShield" : [],
       "aaRandomSets" : [
          
       ]
@@ -68,7 +68,7 @@
       "fRandomMoveRange" : 3,
       "bAvoidFire" : true,
       "bAfraidOfFire" : true,
-      "bAvoidWater" : false
+      "bAvoidWater" : true
    },
    "Category_MonsterAI" : {
       "fAlertRange" : 20,
@@ -101,33 +101,33 @@
       "drDrops" : [
          {
             "sPrefabName" : "Coins",
-            "iAmountMin" : 5, 
-            "iAmountMax" : 50, 
+            "iAmountMin" : 2, 
+            "iAmountMax" : 10, 
             "fChance" : 1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : true
          },
          {
             "sPrefabName" : "ArmorRagsChest",
-            "fChance" : 0.3, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "ArmorRagsLegs",
-            "fChance" : 0.3, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "SwordBronze",
-            "fChance" : 0.7, 
+            "fChance" : 0.01, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "KnifeCopper",
-            "fChance" : 0.7, 
+            "fChance" : 0.02, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          }
