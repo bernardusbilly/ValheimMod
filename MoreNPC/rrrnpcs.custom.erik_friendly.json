@@ -147,45 +147,45 @@
       "drDrops" : [
          {
             "sPrefabName" : "Coins",
-            "iAmountMin" : 20, 
-            "iAmountMax" : 40, 
+            "iAmountMin" : 5, 
+            "iAmountMax" : 30, 
             "fChance" : 1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : true
          },
          {
             "sPrefabName" : "ArmorLeatherChest",
-            "fChance" : 0.3, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "ArmorLeatherLegs",
-            "fChance" : 0.3, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "SwordBronze",
-            "fChance" : 0.6, 
-            "bOnePerPlayer" : false, 
-            "bLevelMultiplier" : false
-         },
-         {
-            "sPrefabName" : "KnifeCopper",
-            "fChance" : 0.8, 
-            "bOnePerPlayer" : false, 
-            "bLevelMultiplier" : false
-         },
-         {
-            "sPrefabName" : "MaceIron",
             "fChance" : 0.2, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
+            "sPrefabName" : "KnifeCopper",
+            "fChance" : 0.3, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "MaceIron",
+            "fChance" : 0.1, 
+            "bOnePerPlayer" : false, 
+            "bLevelMultiplier" : false
+         },
+         {
             "sPrefabName" : "SwordIron",
-            "fChance" : 0.25, 
+            "fChance" : 0.05, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          }

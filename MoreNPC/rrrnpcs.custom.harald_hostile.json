@@ -136,39 +136,39 @@
       "drDrops" : [
          {
             "sPrefabName" : "Coins",
-            "iAmountMin" : 35, 
-            "iAmountMax" : 60, 
+            "iAmountMin" : 10, 
+            "iAmountMax" : 40, 
             "fChance" : 1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : true
          },
          {
             "sPrefabName" : "ArmorBronzeChest",
-            "fChance" : 0.2, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "ArmorBronzeLegs",
-            "fChance" : 0.2, 
+            "fChance" : 0.1, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "SpearBronze",
-            "fChance" : 0.3, 
+            "fChance" : 0.05, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "SwordBronze",
-            "fChance" : 0.5, 
+            "fChance" : 0.05, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          },
          {
             "sPrefabName" : "SwordSilver",
-            "fChance" : 0.1, 
+            "fChance" : 0.01, 
             "bOnePerPlayer" : false, 
             "bLevelMultiplier" : false
          }
