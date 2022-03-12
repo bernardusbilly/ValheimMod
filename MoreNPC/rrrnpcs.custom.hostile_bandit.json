@@ -190,7 +190,18 @@
       "bIsFemale" : false,
       "bRandomGender" : true,
       "bNoBeardIfFemale": true,
-      "aBeardIds" : [],
+      "aBeardIds" : [
+         "Beard1",
+         "Beard2",
+         "Beard3",
+         "Beard4",
+         "Beard5",
+         "Beard6",
+         "Beard7",
+         "Beard8",
+         "",
+         ""
+      ],
       "aHairIds" : [
          "Hair1",
          "Hair2",
